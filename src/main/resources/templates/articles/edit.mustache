@@ -1,0 +1,11 @@
+{{>layouts/header}}
+{{#dtoForm}}
+    <form action="/article/update" method="post">
+        <input name="bno" type="hidden" value="{{bno}}">
+        제목:<input name="bname" value="{{bname}}"/>   <br/>
+        내용:<input name="bcontent" value="{{bcontent}}"/> <br/>
+        <button type="submit">수정하기</button>
+        <a href="/articles/{{bno}}">뒤로가기(Back)</a>
+    </form>
+{{/dtoForm}}
+{{>layouts/footer}}
